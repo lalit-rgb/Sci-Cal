@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ScienteficCalculator/1.0.0": {
+        "dependencies": {
+          "ArithemicOperator": "1.0.0",
+          "ExponentOperator": "1.0.0",
+          "trigonometry": "1.0.0"
+        },
+        "runtime": {
+          "ScienteficCalculator.dll": {}
+        }
+      },
+      "ArithemicOperator/1.0.0": {
+        "runtime": {
+          "ArithemicOperator.dll": {}
+        }
+      },
+      "ExponentOperator/1.0.0": {
+        "runtime": {
+          "ExponentOperator.dll": {}
+        }
+      },
+      "trigonometry/1.0.0": {
+        "runtime": {
+          "trigonometry.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ScienteficCalculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ArithemicOperator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExponentOperator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "trigonometry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

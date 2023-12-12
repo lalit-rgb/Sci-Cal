@@ -1,0 +1,11 @@
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\bin\Debug\net7.0\ArithemicOperator.deps.json
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\bin\Debug\net7.0\ArithemicOperator.dll
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\bin\Debug\net7.0\ArithemicOperator.pdb
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ArithemicOperator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ArithemicOperator.AssemblyInfoInputs.cache
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ArithemicOperator.AssemblyInfo.cs
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ArithemicOperator.csproj.CoreCompileInputs.cache
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ArithemicOperator.dll
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\refint\ArithemicOperator.dll
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ArithemicOperator.pdb
+C:\Users\Lalit\source\repos\SolutionCalculator\ArithemicOperator\obj\Debug\net7.0\ref\ArithemicOperator.dll
