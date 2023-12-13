@@ -15,7 +15,7 @@ namespace Namespace
             int index = i;
             while (!number && index < eq.Length)
             {
-                if (eq[index] == '+' || eq[index] == '*' || (int)eq[index] == '-' || eq[index] == '/' || eq[index] == '(' || eq[index] == ')' || eq[index] == '^'|| eq[index] == 's')
+                if (eq[index] == '+' || eq[index] == '*' || (int)eq[index] == '-' || eq[index] == '/' || eq[index] == '(' || eq[index] == ')' || eq[index] == '^'|| eq[index] == 's' || eq[index] == 'c' || eq[index] == 't' || eq[index] == 'u' || eq[index] == 'i' || eq[index] == 'j')
                 {
                     number = true;
                     continue;
@@ -87,6 +87,8 @@ namespace Namespace
             ConsoleKeyInfo cki;
             string[] history = new string[100];
             int historyIndex = 0;
+            double result=0;
+            bool addToPrevHistory = false;
             KeyPressed += HandleKeys;
             while (true)
             {
@@ -118,6 +120,15 @@ namespace Namespace
                 char[] operators = new char[capacity];
                 bool operatorSet = false, prevCharIsAnOperator = false;
                 double tempOperand = 0;
+                //Console.WriteLine("History Index "+historyIndex+" first element ofthe equation " + eq[0]);
+                if (historyIndex > 0 && eq[0] == '+' || historyIndex > 0 && eq[0] == '-' || historyIndex > 0 && eq[0] == '*' || historyIndex > 0 && eq[0] == '/' || historyIndex > 0 && eq[0] == '^')
+                {
+                    //Console.WriteLine("previous result is" + result);
+                    operands[operandsIndex] = result;
+                    operandsIndex = operandsIndex + 1;
+                    historyIndex = historyIndex - 1;
+                    addToPrevHistory = true;
+                }
 
                 for (int j = 0; j < eq.Length; j++)
                 {
@@ -133,7 +144,13 @@ namespace Namespace
                     }*/
                     if (eq[j] == '-')
                     {
-                        if (j == 0 || operatorSet == true)
+                        if (j == 0 && addToPrevHistory)
+                        {
+                            operators[operatorsIndex] = eq[j];
+                            operatorsIndex++;
+                            prevCharIsAnOperator = true;
+                        }
+                        else if (j == 0 || operatorSet == true)
                         {
                             (tempOperand, j) = getno(eq, j + 1);
                             tempOperand = -1 * tempOperand;
@@ -207,7 +224,13 @@ namespace Namespace
                     }
                     else if (eq[j] == '+')
                     {
-                        if (j == 0 || operatorSet == true)
+                        if (j == 0 && addToPrevHistory)
+                        {
+                            operators[operatorsIndex] = eq[j];
+                            operatorsIndex++;
+                            prevCharIsAnOperator = true;
+                        }
+                        else if (j == 0 || operatorSet == true)
                         {
                             (tempOperand, j) = getno(eq, j + 1);
                             operands[operandsIndex] = tempOperand;
@@ -272,6 +295,7 @@ namespace Namespace
                         }
                         else
                         {
+                           // Console.WriteLine(operandsIndex + " operandindex and operand at one below index " + operands[operandsIndex]);
                             Exponent eobj = new Exponent();
                             (tempOperand, j) = getno(eq, j + 1);
                             operands[operandsIndex - 1] = eobj.Power(operands[operandsIndex - 1], tempOperand);
@@ -281,7 +305,7 @@ namespace Namespace
                     {
                         prevCharIsAnOperator = false;
                         Arithemic obj = new Arithemic();
-                        if (j == 0)
+                        if (j == 0 && !addToPrevHistory)
                         {
                             (tempOperand, j) = getno(eq, j + 1);
                             operands[0] = obj.GetMultiplicationValue(0.0d, tempOperand);
@@ -337,11 +361,71 @@ namespace Namespace
                             operands[operandsIndex-1]= tobj.sin(operands[operandsIndex - 1]);
                         }
                     }
+                    else if (eq[j] == 'c')
+                    {
+                        Trigonometry tobj = new Trigonometry();
+                        if (operandsIndex == 0)
+                        {
+                            operands[operandsIndex - 1] = 1;
+                        }
+                        else
+                        {
+                            operands[operandsIndex - 1] = tobj.cos(operands[operandsIndex - 1]);
+                        }
+                    }
+                    else if (eq[j] == 't')
+                    {
+                        Trigonometry tobj = new Trigonometry();
+                        if (operandsIndex == 0)
+                        {
+                            operands[operandsIndex - 1] = 0;
+                        }
+                        else
+                        {
+                            operands[operandsIndex - 1] = tobj.tan(operands[operandsIndex - 1]);
+                        }
+                    }
+                    else if (eq[j] == 'u')
+                    {
+                        Trigonometry tobj = new Trigonometry();
+                        if (operandsIndex == 0)
+                        {
+                            operands[operandsIndex - 1] = 1;
+                        }
+                        else
+                        {
+                            operands[operandsIndex - 1] = tobj.sec(operands[operandsIndex - 1]);
+                        }
+                    }
+                    else if (eq[j] == 'i')
+                    {
+                        Trigonometry tobj = new Trigonometry();
+                        if (operandsIndex == 0)
+                        {
+                            operands[operandsIndex - 1] = 0;
+                        }
+                        else
+                        {
+                            operands[operandsIndex - 1] = tobj.cosec(operands[operandsIndex - 1]);
+                        }
+                    }
+                    else if (eq[j] == 'j')
+                    {
+                        Trigonometry tobj = new Trigonometry();
+                        if (operandsIndex == 0)
+                        {
+                            operands[operandsIndex - 1] = 0;
+                        }
+                        else
+                        {
+                            operands[operandsIndex - 1] = tobj.cot(operands[operandsIndex - 1]);
+                        }
+                    }
                     else if (eq[j] == '/')
                     {
                         prevCharIsAnOperator = false;
                         Arithemic obj = new Arithemic();
-                        if (j == 0)
+                        if (j == 0 && !addToPrevHistory)
                         {
                             (tempOperand, j) = getno(eq, j + 1);
                             operands[0] = obj.GetDivisionValue(0.0d, tempOperand);
@@ -394,11 +478,21 @@ namespace Namespace
                     }
 
                 }
-                double result = Execution(ref operandsIndex, ref operatorsIndex, operands, operators);
+                result = Execution(ref operandsIndex, ref operatorsIndex, operands, operators);
                 Console.WriteLine("result is: " + result);
-                string tempHist = (eq + " " + result.ToString());
-                history[historyIndex] = tempHist;
-                historyIndex+=1;
+                if (addToPrevHistory)
+                {
+                    string tempHist = (history[historyIndex]+ eq + " " + result.ToString());
+                    history[historyIndex] = tempHist;
+                    historyIndex = historyIndex+ 1;
+                    addToPrevHistory = false;
+                }
+                else
+                {
+                    string tempHist = (eq + " " + result.ToString());
+                    history[historyIndex] = tempHist;
+                    historyIndex = historyIndex + 1;
+                }
                 cki = Console.ReadKey(true);
                 if (cki.Key == ConsoleKey.Escape) break;
             }
@@ -491,8 +585,8 @@ namespace Namespace
                 switch (keyInfo.Key)
                 {
                     case ConsoleKey.S:
-                        Console.Write(" <=sin");
-                        s.Insert(j, "s");
+                        Console.Write(" <=sin-1");
+                        s.Insert(j, "S");
                         j = j + 1;
                         break;
                     case ConsoleKey.T:
@@ -565,8 +659,6 @@ namespace Namespace
             }
             else
             {
-
-                // Handle other special keys
                 switch (keyInfo.Key)
                 {
                     case ConsoleKey.Delete:
@@ -578,10 +670,6 @@ namespace Namespace
                         j = j - 1;
                         Console.Write("\b \b");
                         break;
-                    /*case ConsoleKey.Escape:
-                        s.Insert(j, $"{keyInfo.Key}");
-                        j = j + 1;
-                        break;*/
                     case ConsoleKey.F9:
                         Console.Write($"{keyInfo.Key}");
                         s.Insert(j, $"{keyInfo.Key}");
@@ -633,33 +721,33 @@ namespace Namespace
                         j = j + 1;
                         break;
                     case ConsoleKey.S:
-                        Console.Write($"{keyInfo.Key}");
-                        s.Insert(j, $"{keyInfo.Key}");
+                        Console.Write(" <=sin");
+                        s.Insert(j, "s");
                         j = j + 1;
                         break;
                     case ConsoleKey.T:
-                        Console.Write($"{keyInfo.Key}");
-                        s.Insert(j, $"{keyInfo.Key}");
+                        Console.Write(" <=tan");
+                        s.Insert(j, "t");
                         j = j + 1;
                         break;
                     case ConsoleKey.O:
-                        Console.Write($"{keyInfo.Key}");
-                        s.Insert(j, $"{keyInfo.Key}");
+                        Console.Write(" <=cos");
+                        s.Insert(j, "c");
                         j = j + 1;
                         break;
                     case ConsoleKey.U:
-                        Console.Write($"{keyInfo.Key}");
-                        s.Insert(j, $"{keyInfo.Key}");
+                        Console.Write(" <=sec");
+                        s.Insert(j, "u");
                         j = j + 1;
                         break;
                     case ConsoleKey.I:
-                        Console.Write($"{keyInfo.Key}");
-                        s.Insert(j, $"{keyInfo.Key}");
+                        Console.Write(" <=cosec");
+                        s.Insert(j, "i");
                         j = j + 1;
                         break;
                     case ConsoleKey.J:
-                        Console.Write($"{keyInfo.Key}");
-                        s.Insert(j, $"{keyInfo.Key}");
+                        Console.Write(" <=cot");
+                        s.Insert(j, "j");
                         j = j + 1;
                         break;
                     case ConsoleKey.M:
@@ -763,25 +851,111 @@ namespace Namespace
                         j = j + 1;
                         break;
                     case ConsoleKey.Multiply:
-                        Console.Write("x");
-                        s.Insert(j, "*");
-                        j = j + 1;
+                        if (j != 0)
+                        {
+                            if (s[j - 1] == '-' || s[j - 1] == '*' || s[j - 1] == '/' || s[j - 1] == '+')
+                            {
+                                s.Remove(j - 1, 1);
+                                j = j - 1;
+                                Console.Write("\b \b");
+                                Console.Write("*");
+                                s.Insert(j, "*");
+                                j = j + 1;
+                            }
+                            else
+                            {
+                                Console.Write("*");
+                                s.Insert(j, "*");
+                                j = j + 1;
+                            }
+                        }
+                        else
+                        {
+                            Console.Write("*");
+                            s.Insert(j, "*");
+                            j = j + 1;
+                        }
                         break;
                     case ConsoleKey.Divide:
-                        Console.Write("/");
-                        s.Insert(j, "/");
-                        j = j + 1;
+                        if (j != 0)
+                        {
+                            if (s[j - 1] == '-' || s[j - 1] == '*' || s[j - 1] == '/' || s[j - 1] == '+')
+                            {
+                                s.Remove(j - 1, 1);
+                                j = j - 1;
+                                Console.Write("\b \b");
+                                Console.Write("/");
+                                s.Insert(j, "/");
+                                j = j + 1;
+                            }
+                            else
+                            {
+                                Console.Write("/");
+                                s.Insert(j, "/");
+                                j = j + 1;
+                            }
+                        }
+                        else
+                        {
+                            Console.Write("/");
+                            s.Insert(j, "/");
+                            j = j + 1;
+                        }
                         break;
                     case ConsoleKey.Add:
-                        Console.Write("+");
+
                         //Console.WriteLine("entered");
-                        s.Insert(j, "+");
-                        j = j + 1;
+                        if (j != 0)
+                        {
+                            if (s[j - 1] == '-' || s[j - 1] == '*' || s[j - 1] == '/' || s[j - 1] == '+')
+                            {
+                                s.Remove(j - 1, 1);
+                                j = j - 1;
+                                Console.Write("\b \b");
+                                Console.Write("+");
+                                s.Insert(j, "+");
+                                j = j + 1;
+                            }
+                            else
+                            {
+                                Console.Write("+");
+                                s.Insert(j, "+");
+                                j = j + 1;
+                            }
+                        }
+                        else
+                        {
+                            Console.Write("+");
+                            s.Insert(j, "+");
+                            j = j + 1;
+                        }
                         break;
                     case ConsoleKey.Subtract:
-                        Console.Write("-");
-                        s.Insert(j, "-");
-                        j = j + 1;
+
+                        if (j != 0)
+                        {
+                            if (s[j - 1] == '-' || s[j - 1] == '*' || s[j - 1] == '/' || s[j - 1] == '+')
+                            {
+                                s.Remove(j - 1, 1);
+                                j = j - 1;
+                                Console.Write("\b \b");
+                                Console.Write("-");
+                                s.Insert(j, "-");
+                                j = j + 1;
+                            }
+                            else
+                            {
+                                Console.Write("-");
+                                s.Insert(j, "-");
+                                j = j + 1;
+                            }
+                        }
+                        else
+                        {
+                            Console.Write("-");
+                            s.Insert(j, "-");
+                            j = j + 1;
+                        }
                         break;
                     case ConsoleKey.D9:
                         Console.Write("(");

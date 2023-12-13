@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj": {}
+    "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj": {
+    "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj",
+        "projectUniqueName": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj",
         "projectName": "ExponentOperator",
-        "projectPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj",
+        "projectPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj",
         "packagesPath": "C:\\Users\\Lalit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\obj\\",
+        "outputPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lalit\\AppData\\Roaming\\NuGet\\NuGet.Config",

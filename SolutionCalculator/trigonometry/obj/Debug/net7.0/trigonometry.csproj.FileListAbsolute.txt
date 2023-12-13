@@ -9,3 +9,14 @@ C:\Users\Lalit\source\repos\SolutionCalculator\trigonometry\obj\Debug\net7.0\tri
 C:\Users\Lalit\source\repos\SolutionCalculator\trigonometry\obj\Debug\net7.0\refint\trigonometry.dll
 C:\Users\Lalit\source\repos\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.pdb
 C:\Users\Lalit\source\repos\SolutionCalculator\trigonometry\obj\Debug\net7.0\ref\trigonometry.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\bin\Debug\net7.0\trigonometry.deps.json
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\bin\Debug\net7.0\trigonometry.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\bin\Debug\net7.0\trigonometry.pdb
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.AssemblyInfoInputs.cache
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.AssemblyInfo.cs
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.csproj.CoreCompileInputs.cache
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\refint\trigonometry.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\trigonometry.pdb
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\trigonometry\obj\Debug\net7.0\ref\trigonometry.dll

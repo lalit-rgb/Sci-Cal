@@ -64,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ScienteficCalculator\\ScienteficCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ScienteficCalculator\\ScienteficCalculator.csproj",
       "projectName": "ScienteficCalculator",
-      "projectPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ScienteficCalculator\\ScienteficCalculator.csproj",
+      "projectPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ScienteficCalculator\\ScienteficCalculator.csproj",
       "packagesPath": "C:\\Users\\Lalit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ScienteficCalculator\\obj\\",
+      "outputPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ScienteficCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lalit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,14 +85,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj": {
-              "projectPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj"
+            "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj": {
+              "projectPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj"
             },
-            "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj": {
-              "projectPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj"
+            "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj": {
+              "projectPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ExponentOperator\\ExponentOperator.csproj"
             },
-            "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\trigonometry\\trigonometry.csproj": {
-              "projectPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\trigonometry\\trigonometry.csproj"
+            "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\trigonometry\\trigonometry.csproj": {
+              "projectPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\trigonometry\\trigonometry.csproj"
             }
           }
         }

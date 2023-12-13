@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj": {}
+    "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj": {
+    "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj",
+        "projectUniqueName": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj",
         "projectName": "ArithemicOperator",
-        "projectPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj",
+        "projectPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\ArithemicOperator.csproj",
         "packagesPath": "C:\\Users\\Lalit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lalit\\source\\repos\\SolutionCalculator\\ArithemicOperator\\obj\\",
+        "outputPath": "C:\\Users\\Lalit\\Documents\\GitHub\\Sci-Cal\\SolutionCalculator\\ArithemicOperator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lalit\\AppData\\Roaming\\NuGet\\NuGet.Config",

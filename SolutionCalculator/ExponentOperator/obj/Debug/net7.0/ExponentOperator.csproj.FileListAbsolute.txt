@@ -9,3 +9,14 @@ C:\Users\Lalit\source\repos\SolutionCalculator\ExponentOperator\obj\Debug\net7.0
 C:\Users\Lalit\source\repos\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\refint\ExponentOperator.dll
 C:\Users\Lalit\source\repos\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.pdb
 C:\Users\Lalit\source\repos\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ref\ExponentOperator.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\bin\Debug\net7.0\ExponentOperator.deps.json
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\bin\Debug\net7.0\ExponentOperator.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\bin\Debug\net7.0\ExponentOperator.pdb
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.AssemblyInfoInputs.cache
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.AssemblyInfo.cs
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.csproj.CoreCompileInputs.cache
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\refint\ExponentOperator.dll
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ExponentOperator.pdb
+C:\Users\Lalit\Documents\GitHub\Sci-Cal\SolutionCalculator\ExponentOperator\obj\Debug\net7.0\ref\ExponentOperator.dll
